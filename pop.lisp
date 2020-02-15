@@ -15,6 +15,9 @@
 (defvar Cenicienta 0)
 (defvar RodrigoMorales 0)
 (print "TEST: Que princesa de disney eres")
+
+;primera pregunta
+
 (print "Preguna 1. Que color de ojos te gustaria para tu novio?")
 (print "1. Verdes")
 (print "2. No quiero tener novio")
@@ -28,9 +31,71 @@
         ((= c 4) (setq Cenicienta (+ Cenicienta 1)))
         ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
     )
-(agregar c BlancaNieves Moana Fiona Cenicienta RodrigoMorales)
-(print BlancaNieves)
-(print Moana)
-(print Fiona)
-(print Cenicienta)
-(print RodrigoMorales)
+;segunda pregunta
+
+(print "Preguna 2. Cual es tu color favorito?")
+(print "1. Blanco")
+(print "2. Cafe")
+(print "3. Verde")
+(print "4. Celeste")
+(print "5. Rojo")
+(setq c (read))
+(cond ((= c 1) (setq BlancaNieves (+ BlancaNieves 1)))
+        ((= c 2) (setq Moana (+ Moana 1)))
+        ((= c 3) (setq Fiona (+ Fiona 1)))
+        ((= c 4) (setq Cenicienta (+ Cenicienta 1)))
+        ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
+    )
+
+
+; tercera pregunta
+
+(print "Preguna 3. Donde te gustaria vivir?")
+(print "1. Bosque")
+(print "2. Playa")
+(print "3. Pantano")
+(print "4. Castillo")
+(print "5. Espana")
+(setq c (read))
+(cond ((= c 1) (setq BlancaNieves (+ BlancaNieves 1)))
+        ((= c 2) (setq Moana (+ Moana 1)))
+        ((= c 3) (setq Fiona (+ Fiona 1)))
+        ((= c 4) (setq Cenicienta (+ Cenicienta 1)))
+        ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
+    )
+
+(print "Preguna 4. Cual es tu comida favorita?")
+(print "1. Nueces")
+(print "2. Coco")
+(print "3. Rana asada")
+(print "4. Fresas")
+(print "5. Ensalada")
+(setq c (read))
+
+(cond ((= c 1) (setq BlancaNieves (+ BlancaNieves 1)))
+        ((= c 2) (setq Moana (+ Moana 1)))
+        ((= c 3) (setq Fiona (+ Fiona 1)))
+        ((= c 4) (setq Cenicienta (+ Cenicienta 1)))
+        ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
+    )
+
+(print "Preguna 5. Que tipo de celular usas?")
+(print "1. Huaweii")
+(print "2. Samsung")
+(print "3. Frijolito")
+(print "4. Iphone")
+(print "5. Motorola")
+(setq c (read))
+
+(cond ((= c 1) (setq BlancaNieves (+ BlancaNieves 1)))
+        ((= c 2) (setq Moana (+ Moana 1)))
+        ((= c 3) (setq Fiona (+ Fiona 1)))
+        ((= c 4) (setq Cenicienta (+ Cenicienta 1)))
+        ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
+)
+
+(print "Tu eres la princesa: ")
+
+(format t " ~A~%" (symbol-name ' (apply 'max'(BlancaNieves Moana Fiona Cenicienta RodrigoMorales))
+	))
+

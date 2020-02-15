@@ -94,3 +94,7 @@
         ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
 )
 
+(print "por el momento no podemos imprimir el nombre de la princesa ")
+(print "pero una vez usemos java ya podremos porque nos aprovecharemos")
+(print "del uso de los atributos")
+

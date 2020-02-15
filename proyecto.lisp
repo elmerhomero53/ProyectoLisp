@@ -94,8 +94,3 @@
         ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
 )
 
-(print "Tu eres la princesa: ")
-
-(format t " ~A~%" (symbol-name ' (apply 'max'(BlancaNieves Moana Fiona Cenicienta RodrigoMorales))
-	))
-

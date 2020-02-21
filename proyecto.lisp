@@ -8,6 +8,12 @@
         ((= c 5) (setq v5 (+ v5 1)))
     )
  )
+
+(defun smallest (l)
+; takes a list 
+; return the smallest element
+  (apply 'min l)
+)
            
 (defvar BlancaNieves 0)
 (defvar Moana 0)
@@ -94,7 +100,15 @@
         ((= c 5) (setq RodrigoMorales (+ RodrigoMorales 1)))
 )
 
-(print "por el momento no podemos imprimir el nombre de la princesa ")
-(print "pero una vez usemos java ya podremos porque nos aprovecharemos")
-(print "del uso de los atributos")
+(setq lista (list BlancaNieves Moana Fiona Cenicienta RodrigoMorales))
+(setq m (apply 'max lista))
 
+(cond ((= m BlancaNieves) (setq princesa "BlancaNieves"))
+        ((= m Moana) (setq princesa "Moana"))
+        ((= m Fiona) (setq princesa "Fiona"))
+        ((= m Cenicienta) (setq princesa "Cenicienta"))
+        ((= m RodrigoMorales) (setq princesa "RodrigoMorales"))
+)
+
+(princ "Tu eres la princesa: " )
+( print princesa)
